@@ -1,44 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<title>Projet cuisine Calédonienne</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    font-family: "Times New Roman", Georgia, Serif;
+  }
 
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Recette Caledonienne</title>
-</head>
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+  }
+</style>
 
 <body>
-    <h1>Recette Caledonienne facile</h1>
-    <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1">Ma recette Caledonienne</span>
-    </nav>
-    <h3>Recette de la Brioche mouelleuse Calédonienne</h3>
-    <div class="description">
-        <div class="img_desc">
-            <img src="brioche-mouelleuse-caledonnienne.jpg" alt="recette-brioche-mouelleuse-caledonnienne"
-                class="img-thumbnail">
-            <p>320 ml de lait <br>
-                30 g de beurre fondu <br>
-                50 g de sucre <br>
-                1 gros oeuf <br>
-                3 g de sel <br>
-                540 g de farine <br>
-                1 sachet de levure de boulanger
-            </p>
-        </div>
 
-        <p>D'abord fondre le beurre- dissoudre la levure dans le lait tiède. Mélanger les ingrédients avec un levée et
-            laisser reposer pendant 1h. Si la pâte a doublé son volume, séparer la pâte en 2, dégaser la pâte, mettre
-            dans un moule et laisser lever 30 min. Maintenant mélangez 1 jaune d'oeuf avec du lait et badigeonnez.
-            Laisser cuir a 150° environ 20 minutes. Bonne dégustation
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+      <a href="#home" class="w3-bar-item w3-button">Recette Calédonienne</a>
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#recette_phare" class="w3-bar-item w3-button">Recette Phare</a>
+        <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+        <a href="#reservation" class="w3-bar-item w3-button">Réservation</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+    <img class="w3-image" src="image/bougna-recette-caledonienne2.jpg" alt="recette-bougna-caledonienne" width="1600"
+      height="800">
+    <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+      <h2 class="w3-xxlarge">Le Bougna</h2>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:1100px">
+
+    <!-- recette_phare Section -->
+    <div class="w3-row w3-padding-64" id="recette_phare">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img src="image/brioche-mouelleuse-caledonnienne.jpg" class="w3-round w3-image w3-opacity-min"
+          alt="recette caledonienne" width="600" height="780">
+      </div>
+
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">Recette de la Brioche moelleuse Calédonienne</h1><br>
+        <h5 class="w3-center">Tradition Calédonienne</h5>
+        <p class="w3-large">
+          <p>320 ml de lait <br>
+            30 g de beurre fondu <br>
+            50 g de sucre <br>
+            1 gros oeuf <br>
+            3 g de sel <br>
+            540 g de farine <br>
+            1 sachet de levure de boulanger
+          </p>
+          <span class="w3-tag w3-light-grey"></span> Ingredients.
         </p>
+      </div>
+      <div class="manip"></div>
+      <p class="w3-large w3-text-grey w3-hide-medium">D'abord fondre le beurre - Dissoudre la levure dans le lait
+        tiède. Mélanger les ingrédients avec un levé et
+        laisser reposer pendant 1h. Si la pâte a doublé son volume,dégaser la pâte, séparer la pâte en part de 50 g,
+        mettre
+        sur une plaque de cuisson et laisser lever 30 min. Maintenant mélangez 1 jaune d'oeuf avec du lait et
+        badigeonnez.
+        Laisser cuir a 150°C environ 20 minutes. Bonne dégustation. <br>
+        Bonne Recette Calédonienne
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Menu</h1><br>
+      <h4>Poisson Fumée</h4>
+      <p class="w3-text-grey">Assortiment de frite de patate douce, salade saisonière 7.00</p><br>
+
+      <h4>Bougna de Walei</h4>
+      <p class="w3-text-grey">Légumes naturels avec son lit de lait de coco et son Walei 7.00</p><br>
+
+      <h4>Salade de poulpe</h4>
+      <p class="w3-text-grey">Poulpe frais, marinée dans de la vanille calédonienne des îles Loyautés 7.50</p><br>
+
+      <h4>Burger Ouégoa</h4>
+      <p class="w3-text-grey">Viande de Ouégoa, frite ou frite de patate douce et une salade de papaye vert 7.50</p><br>
+
+      <h4 class="brioche">Brioche</h4>
+      <p class="w3-text-grey">Notre célébre brioche mouelleuse 100% recette Calédonienne 1.50</p>
     </div>
 
+    <div class="w3-col l6 w3-padding-large">
+      <img src="image/bougna-recette-caledonnienne.jpg" class="w3-round w3-image w3-opacity-min"
+        alt="bougna-recette-caledonienne" style="width:100%">
+    </div>
+  </div>
 
+  <hr>
 
+  <!-- Reservation Section -->
+  <div class="w3-container w3-padding-64" id="reservation">
+    <h1>Réservation</h1><br>
+    <p>N'hésiter pas à venir nous rejoindre et à apprecier les saveur de la cuisine Calédonnienne. on vous fera voyager
+      malgré la crise sanitaire avec les recettes Calédonienne connu dans tout le territoire. </p>
+    <p class="w3-text-blue-grey w3-large"><b>Nouméa, Nouvelle-Calédonie 988</b></p>
+    <p>Contacter nous par mail recette_caledonnienne@pourdubeurre.nc ou par téléphone au +687 92.93.08 POUR RESERVER
+      VOTRE TABLE DES MAINTENANT
+    </p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="Nombre de personne" required name="People">
+      </p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date et Heure" required name="date"
+          value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required
+          name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">ENVOYER Message</button></p>
+    </form>
+  </div>
+
+  <!-- End page content -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-light-grey w3-padding-32">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+        class="w3-hover-text-green">w3.css</a></p>
+  </footer>
 
 </body>
 

@@ -1,14 +1,8 @@
 body {
-    background-color: antiquewhite;
-    margin: 20% 20%;
+    background-color: rgba(220, 220, 220, 0.103);
+    font-family: 'Segoe UI';
 }
 
-.img-thumbnail {
-    
-        max-width: 20% !important;
-        height: auto !important;
-}
-
-.img_desc {
-    display: flex;
+.w3-round{   
+margin-top: 36%;
 }
